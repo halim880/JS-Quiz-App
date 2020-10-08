@@ -1,0 +1,182 @@
+
+
+/* Global styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #efefef;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* End global styling */
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background: #009688;
+    color: white;
+}
+.customBox{
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 50%;
+    height: 500px;
+    background: rgb(45, 56, 93);
+}
+
+.homeDiv.hide{
+    display:none;
+}
+
+.homeDiv .customBox{
+    font-size: 20px;
+    height: 100px;
+    width: 100%;
+    background: rgb(41, 88, 109);
+}
+.startQuiz{
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+}
+
+.categoryDiv{
+    height: 500px;
+
+}
+
+.categoryDiv.hide{
+    display:none;
+}
+
+.quizBox{
+    height: 500px;
+}
+.quizBox.hide{
+    display: none;
+}
+.heading{
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.heading .timerDiv,
+.heading .scoreDiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(55, 58, 57);
+    text-align: center;
+    padding: 16px;
+}
+
+.timerDiv.hide{
+    display: none;
+}
+
+.timesUpDiv{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+    border:1px solid rgb(238, 21, 21);
+    border-radius:10px;
+    outline: none;
+    color:rgb(233, 97, 18);
+    animation: fadeInOut 1s ease;
+}
+
+.timesUpDiv.hide{
+    display: none;
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 0
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.heading .categoryName{
+    width: calc(100% - 100px);
+    text-align: center;
+    font-size:45px;
+    height: 50px;
+}
+
+.quizBox .questionDiv {
+    width: 100%;
+    font-size: 30px;
+    background: rgb(89, 95, 99);
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    color: #e8e8f5;
+}
+
+.quizBox .optionsDiv{
+    margin-top: 20px;
+    width: 100%;
+}
+.categoryDiv div,
+.quizBox .optionsDiv div{
+    width: calc(50% - 30px);
+    display:inline-block;
+    text-align: center;
+    padding:10px;
+    margin: 10px;
+    border-radius: 5px;
+    background: rgb(50, 55, 70);
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn{
+    height: 40px;
+    background: rgb(48, 114, 145);
+    color: white;
+    outline: none;
+    border: none;
+    width:200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nextQuestionButton{
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+}
+
+.nextQuestionButton.hide{
+    display: none;
+}
+
+.resultBox{
+    height: 500px;
+}
+.resultBox.hide{
+    display: none;
+}

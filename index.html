@@ -1,0 +1,45 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="homeDiv customBox hide">
+            <div class="customBox">This is a quiz app. Developed using Pure javascript</div>
+        <button class="btn startQuiz" onclick="getCategory()">Start Quiz</button>
+        </div>
+        <div class="categoryDiv customBox">
+            
+        </div>
+        <div class="quizBox customBox hide">
+            <div class="heading">
+                <div class="timerDiv"></div>
+                <div class="timesUpDiv hide">Times Up</div>
+                <div class="categoryName"></div>
+                <div class="scoreDiv"></div>
+            </div>
+            <div class="questionDiv"></div>
+            <div class="optionsDiv">
+                
+            </div>
+
+            <button class="btn nextQuestionButton" onclick="getNewQuestion()">Next</button>
+        </div>
+
+        <div class="resultBox customBox hide">
+            Here Is your result!
+        </div>
+    
+    </div>
+    <script src="question.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
